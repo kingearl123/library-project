@@ -4,8 +4,6 @@ require_once __DIR__ . '/../controllers/MahasiswaController.php';
 
 $controller = new MahasiswaController($koneksi);
 
-
-
 $nim = $_GET['nim'] ?? null;
 
 switch ($_SERVER['REQUEST_METHOD']) {
