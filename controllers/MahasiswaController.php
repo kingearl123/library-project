@@ -37,7 +37,6 @@ class MahasiswaController {
             echo json_encode(['message' => 'NIM wajib diisi']);
             exit;
         }
-
         $data = json_decode(file_get_contents("php://input"), true);
 
         if (!$data) {
