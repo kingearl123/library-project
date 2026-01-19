@@ -21,7 +21,6 @@ class AuthMiddleware {
         }
 
         $token = str_replace("Bearer ", "", $headers['authorization']);
-
         try {
             return JWT::decode(
                 $token,
